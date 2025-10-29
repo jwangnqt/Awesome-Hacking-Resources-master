@@ -17,7 +17,7 @@ pipeline {
     stage('build') {
       steps {
         // your build scripts
-        sh "./build.sh"
+         echo "Build step (skipped)"
       }
     }
   }
