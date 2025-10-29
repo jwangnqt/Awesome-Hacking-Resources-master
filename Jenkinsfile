@@ -15,7 +15,7 @@ pipeline {
     // Giai đoạn này chạy quét trên code của bạn
     stage('scan for issues') {
       steps {
-        sh "$HOME/.spectral/spectral scan --ok --engines secrets,iac,oss,ci/cd,opensource --include-tags base,audit3,iac"
+        sh "$HOME/.spectral/spectral scan --ok --engines secrets,iac,oss,cicd,opensource --include-tags base,audit3,iac"
       }
     }
 
