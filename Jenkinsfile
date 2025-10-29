@@ -23,7 +23,7 @@ pipeline {
     stage('build') {
       steps {
         // Ví dụ: sh "./build.sh"
-        sh "./build.sh"
+        echo "Build step (skipped)"
       }
     }
   }
