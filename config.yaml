@@ -1,0 +1,9 @@
+# File cấu hình thử nghiệm để kiểm tra Secrets
+database:
+  password: "MySuperSecretPassword123!"
+api_keys:
+  slack_token: "xoxp-1234567890-1234567890-1234567890-abcdef123456"
+ssh_key: |
+  -----BEGIN RSA PRIVATE KEY-----
+  MIIEogIBAAKCAQEAuZ...
+  -----END RSA PRIVATE KEY-----

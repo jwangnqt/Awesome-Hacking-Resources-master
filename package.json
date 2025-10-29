@@ -1,0 +1,8 @@
+{
+  "name": "vulnerable-test-project",
+  "version": "1.0.0",
+  "description": "Test project for OSS scan",
+  "dependencies": {
+    "lodash": "4.17.4"
+  }
+}

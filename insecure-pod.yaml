@@ -1,0 +1,13 @@
+# File cấu hình Kubernetes để test IaC & CI/CD Hardening
+apiVersion: v1
+kind: Pod
+metadata:
+  name: privileged-pod-test
+spec:
+  containers:
+  - name: nginx-container
+    image: nginx
+    securityContext:
+      # LỖI: Chạy container với quyền cao nhất (privileged)
+      # Lỗi này sẽ kích hoạt cả IaC và CI/CD Hardening
+      privileged: true
