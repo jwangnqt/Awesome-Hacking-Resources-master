@@ -15,7 +15,7 @@ pipeline {
     // Giai đoạn này chạy quét trên code của bạn
     stage('scan for issues') {
       steps {
-        sh "$HOME/.spectral/spectral scan --ok  --include-tags base,audit"
+        sh "$HOME/.spectral/spectral scan --ok --engines secrets,iac,oss --include-tags base,audit3,iac"
       }
     }
 
@@ -23,7 +23,7 @@ pipeline {
     stage('build') {
       steps {
         // Ví dụ: sh "./build.sh"
-        echo "Building your project..."
+        sh "./build.sh"
       }
     }
   }
